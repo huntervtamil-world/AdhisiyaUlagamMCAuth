@@ -1,0 +1,29 @@
+name: AdhisiyaUlagamMCAuth
+version: 1.0.0
+main: com.adhisiyaulagam.auth.AuthPlugin
+api-version: '1.21'
+author: AdhisiyaUlagamMC
+description: Registration, login, premium labels, and display-name tools for Java and Floodgate players.
+commands:
+  register:
+    description: Register an account
+    usage: /register <password> <confirmPassword>
+    aliases: [reg]
+  login:
+    description: Log in to your account
+    usage: /login <password>
+    aliases: [l]
+  changepassword:
+    description: Change your account password
+    usage: /changepassword <oldPassword> <newPassword>
+    aliases: [changepass]
+  authadmin:
+    description: Admin tools for AdhisiyaUlagamMCAuth
+    usage: /authadmin <premium|name|reload> ...
+permissions:
+  adhisiyaauth.admin:
+    description: Access authentication administration commands
+    default: op
+  adhisiyaauth.bypass:
+    description: Bypass authentication (not enabled by default; use only for trusted staff)
+    default: false

@@ -1,0 +1,36 @@
+# AdhisiyaUlagam®MC Auth
+# All players must register and log in. The premium list is an admin-managed LABEL only;
+# it does not bypass authentication.
+settings:
+  password-min-length: 8
+  password-max-length: 64
+  max-login-attempts: 5
+  login-timeout-seconds: 60
+  session-on-reconnect: false
+  allow-unauthenticated-commands:
+    - register
+    - login
+    - changepassword
+    - authadmin
+messages:
+  prefix: '&8[&6AdhisiyaUlagam&8] &r'
+  register-required: '&ePlease register: &6/register <password> <confirmPassword>'
+  login-required: '&ePlease log in: &6/login <password>'
+  register-success: '&aRegistration complete. You are now logged in.'
+  login-success: '&aYou are now logged in.'
+  already-registered: '&cYou already have an account. Use /login <password>.'
+  not-registered: '&cYou do not have an account. Use /register <password> <confirmPassword>.'
+  password-mismatch: '&cThose passwords do not match.'
+  password-too-short: '&cPassword must be at least %min% characters.'
+  password-too-long: '&cPassword cannot exceed %max% characters.'
+  wrong-password: '&cIncorrect password.'
+  too-many-attempts: '&cToo many failed attempts. You have been disconnected.'
+  password-changed: '&aPassword changed successfully.'
+  old-password-wrong: '&cYour current password is incorrect.'
+  already-logged-in: '&aYou are already authenticated.'
+  premium-added: '&aAdded %player% to the admin-approved premium label list.'
+  premium-removed: '&aRemoved %player% from the premium label list.'
+  premium-label: '&6[PREMIUM] '
+  display-name-set: '&aDisplay name updated for %player%.'
+  display-name-reset: '&aDisplay name reset for %player%.'
+  no-permission: '&cYou do not have permission.'
